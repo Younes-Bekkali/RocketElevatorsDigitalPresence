@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<title>Quote Form Rocket Elevators</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+       		<!--header -->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+									<li class="dropdown"><!-- SERVICES -->
+										<a href="index.html#services">
+											SERVICES
+										</a>
+										<ul class="dropdown-menu">
+
+											<li><a href="./residential.html">Residential services</a></li>
+											<li><a href="./corporate.html">Corporate services</a></li>
+											
+										</ul>
+									</li>
+
+									
+									<li><!-- WORK -->
+										<a href="index.html#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+			<!--header -->
+            
+        <style>
+            :-moz-placeholder {
+                font-weight: light;
+                font-size : 14px;
+            }
+            ::-webkit-input-placeholder {
+                 font-weight: light;
+                 font-size: 14px;
+            }
+            ::-moz-placeholder {
+                font-weight: light;
+                font-size: 14px;
+            }
+            }
+            :-ms-input-placeholder {
+                 font-weight: light;
+                 font-size: 14px;
+            }
+        </style>
+        
+	</head>
+
+    <body >
+        
+          
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1 col-sm-1">
+      
+                  
+                
+                  
+      
+                </div>
+                <div class="col-md-11 col-sm-11">
+                  <div class="card card-default ">
+                    <!-- quote-->
+                    <div class="card-heading card-heading-transparent text-center ">
+                      <h2 class="font-weight-bold">Quote Form</h2>
+                    </div>
+      
+                    <div class="card-block">
+                      <form action="" method=""  >
+                        <fieldset>
+                        <!--
+                          <div>
+                            <div class="col-md-6 col-sm-6 ">
+                              <label>Please choose your building type:</label>
+                              <select name="buildingType" class="form-control pointer required" id="buildingType" onChange="showDiv(this.options[this.selectedIndex].value)">
+                                <option value="" selected>-- building type: --</option>
+                                <option value="residential">Residential building</option>
+                                <option value="commercial">Commercial building</option>
+                                <option value="corporate">Corporate building</option>
+                                <option value="hybrid">Hybrid building</option>
+                              </select>
+                            </div>
+                          </div>
+                          -->
+
+                          <div>
+                            <div class="row" >
+                              <!-- Row Left -->
+                              <div class="col-md-6 col-sm-6">
+                                <div >
+                              
+                                  <label>Please choose your building type:</label>
+                                  <select name="buildingType" class="form-control pointer required" id="buildingType" onChange="showDiv(this.options[this.selectedIndex].value)">
+                                    <option value="" selected>-- building type: --</option>
+                                    <option value="residential">Residential building</option>
+                                    <option value="commercial">Commercial building</option>
+                                    <option value="corporate">Corporate building</option>
+                                    <option value="hybrid">Hybrid building</option>
+                                  </select>
+                                </div>
+                               
+
+                              </div>
+
+
+                              <!-- Row Right-->
+
+                              <div class="col-md-5 col-sm-5">
+                                <div id="ProductLineChoiceDiv" style="display:none;">
+                                  
+                                  <label for="productLine">Please choose your product line:</label>
+                                  <label class="radio">
+                                    <input type="radio" name="productLine" onclick="fun()" id="standard" value="standard" selected>
+                                    <i></i>Standard
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="productLine" onclick="fun()" id="premium" value="premium">
+                                    <i></i>Premium
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="productLine" onclick="fun()" id="excelium" value="excelium">
+                                    <i></i>Excelium
+                                    
+                                  </label>
+                                  
+                                  
+                                  
+                
+                                </div>
+
+                              </div>
+
+
+
+                            </div>
+                           
+                          </div>
+                          
+
+                          
+                          
+                          <!-- Inputs values-->
+      
+                          <br>
+                          <hr><br>
+                          <div class=" row">
+                            <!-- Row right-->
+                          <div class="col-md-5 col-sm-5">
+                            <div class="col-md-12 col-sm-12" id="NumApartentsDiv" style="display:none;" class="col-md-6 col-sm-6">
+                              <strong> The number of apartments in the building :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numApartments" id="numApartments" placeholder="Insert the number of appartments." oninput="fun()"><br>
+                            </div>
+                            <div class="col-md-12 col-sm-12" id="NumFloorsDiv" style="display:none;">
+                              <strong>The number of floors contained in the building:</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numFloors" id="numFloors" placeholder="Insert he number of floors" oninput="fun()"><br>
+                            </div>
+        
+                            
+        
+                            
+
+                            <div class="col-md-12 col-sm-12" id="NumParkingSpacesDiv" style="display:none;">
+                              <strong>The number of parking spaces available :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numParkingSpaces" id="numParkingSpaces" placeholder="Insert the number of parking spaces available" oninput="fun()"><br>
+                            </div>
+        
+                            <div class="col-md-12 col-sm-12" id="NumElevatorsCagesDiv" style="display:none;">
+                              <strong>The number of elevator cages to be deployed :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numElevatorsCages" id="numElevatorsCages" placeholder="Insert the number of elevator cages to be deployed" oninput="fun()"><br>
+                            </div>
+                            <div class="col-md-12 col-sm-12" id="OccupantsPerFloorDiv" style="display:none;">
+                              <strong>The maximum number of occupants per floor :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numOccupantsPerFloor" id="numOccupantsPerFloor" placeholder="Insert the maximum number of occupants per floor" oninput="fun()"><br>
+                            </div>
+
+                          </div>
+
+                          <!-- Row Left-->
+                          <div class="col-md-5 col-sm-5">
+                            <div class="col-md-12 col-sm-12" id="NumBasementsDiv" style="display:none;">
+                              <strong>The number of basements contained in the building:</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numBasements" id="numBasements" placeholder="Insert the number of basements " oninput="fun()"><br>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12" id="NumBusinessesDiv" style="display:none;">
+                              <strong>The number of distinct businesses :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numBusinesses" id="numBusinesses" placeholder="Insert the number of distinct businesses" oninput="fun()"><br>
+                            </div>
+                            <div class="col-md-12 col-sm-12" id="NumCompaniesDiv" style="display:none;">
+                              <strong>The number of separate tenant compagnies :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numCompanies" id="numCompanies" placeholder="Insert the number of separate tenant compagnies" oninput="fun()"><br>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12" id="numActivityHoursDiv" style="display:none;">
+                              <strong>The number of hours of activity of the building :</strong>
+                              <input type="text" value="0" min="0" max="1000" class="form-control stepper" name="numActivityHours" id="numActivityHours" placeholder="Insert the number of hours of activity of the building" oninput="fun()"><br>
+                            </div>
+                            
+                          </div>
+                   
+
+                          
+                          
+                            
+      
+                        </fieldset>
+                      </form>
+                  
+      
+                     
+      
+                    </div>
+                    <!-- results-->
+                    <div id="finalResults" style="display:none;">
+                    <div class="card-heading card-heading-transparent text-center ">
+                      <hr><h3 class="font-weight-light">Quote Results</h3><hr>
+                    </div>
+                    <div class="card-block">
+                     
+                      <div class="col-md-12 col-sm-12" ><br>
+                        
+                        <div class="row">
+
+                          <div class="col-md-6 col-sm-6">
+                             <!--<br>The unit price is :<input id="unitPrice" type="text" class="form-control stepper"name="unitPrice_input" value="0" readonly> -->
+                             <br>the number of cages is: <input id="numOfCages" value="0" class="form-control stepper"  readonly>
+                            </div>
+
+                           <div class="col-md-6 col-sm-6">
+                               
+                               <br>the total cost is : <input id="totalCost" value="0" class="form-control stepper"  readonly>
+                           </div>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+
+
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="parallax parallax-1" style="background-image: url('assets/images/AdobeStock_78149317.jpeg');">
+            <div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+    
+            <div class="container">
+    
+              <div class="text-center">
+                <h2 class="fs-40 fw-300">In your service Since 1976</h2>
+                <p>Proud Partner of Our Customers for Almost 50 Years
+                                
+                  Whether your project is small or large, each client is different. We have flexible, innovative and sustainable solutions tailored to your needs. </p>
+                
+                <a class="btn btn-default btn-lg" href="index.html#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
+              </div>
+    
+            </div>
+          </section>
+      
+               
+                
+                    
+              
+    
+           
+          
+            
+             
+            
+        <script src="assets/js/quotescriptcopy-Last functional version.js">
+
+                    
+        </script>   
+
+        <!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">TRY US?</h3>
+
+							<!-- Small Description -->
+							
+							<p>
+								
+						   Rocket Elevators is a leader in the field. We manufacture elevators <br>
+						   that help people in their mobility - whether that's in the home,<br>
+						     in a corporate or a commercial building. 
+
+							</p>
+							<p>
+								Rocket Elevators, elevate Safety, Speed and Style.
+							</p>
+							<h2>  (581) 701-0303</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">CONTACT US</h3>
+
+							<!-- Newsletter Form -->
+							<p> To get Important News & Offers, please subscribe to Our Newsletter</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+    </body>
+</html>
